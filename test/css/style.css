@@ -110,6 +110,10 @@ html {
 /* +=+=+=+=+=+=+=+=+=+=+=+=+ */
 /* =+=+=+=+=+=+=+=+=+=+=+=++ */
 
+.landing {
+    height: 100vh;
+}
+
 .landing .title {
     color: #202E20;
     font-family: Montserrat;
@@ -179,6 +183,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    
     .landing .title {
         font-size: 1.8em;
     }
@@ -187,5 +192,19 @@ html {
         font-size: 1.2em;
         max-width: 500px;
         padding: 0 40px;
+    }
+    
+    .footer {
+        height: 280px;
+    }
+    
+    .footer .frame {
+        margin-left: 20px;
+        width: 80px;
+    }
+    
+    .footer .frame a,
+    .footer .frame p {
+        font-size: 0.7em;
     }
 }
