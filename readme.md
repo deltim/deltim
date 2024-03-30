@@ -7,9 +7,6 @@ Hi! I am Timothy.<br><br>A high school student studying computer science <br>and
 #### 📮‎‎‎‎‎‎‎‎ Want to contact me ?
 → Reach me at this mail address: _deletrez.timothy@gmail.com_
 
-#### ✏ I'm currently working on...
-→ Nothing
-
 <br>
 <br>
 <p align="right">
