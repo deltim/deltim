@@ -1,6 +1,6 @@
 <h1 align="left">👋 Hi!</h1>
 
-<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs?username=deltim&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=github_dark&hide_border=true&order=2&custom_title=Languages" height="150" alt="languages graph"/>
+<img align="right" src="https://github-readme-stats.vercel.app/api/top-langs?username=lazzytim&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=github_dark&hide_border=true&order=2&custom_title=Languages" height="150" alt="languages graph"/>
 
 Hi! I am Timothy.<br><br>A high school student studying computer science <br>and electronics who learns to be less stupid!
 
