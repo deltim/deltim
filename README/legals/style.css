@@ -12,6 +12,17 @@ a, p, h1 {
     font-family: var(--font-sub);
 }
 
+::selection {
+    background: aquamarine;
+    color: black;
+}
+
+.test::selection {
+    background: deeppink;
+    color: white;
+}
+  
+
 :root {
     --cursor: url('../assets/cursor.png'), auto;
     
@@ -41,13 +52,6 @@ body::-webkit-scrollbar {
     background: var(--color-scrollbar-bg);
     width: 0px;
 }
-
-/* body::-webkit-scrollbar-thumb {
-    cursor: var(--cursor);
-    background-color: var(--color-scrollbar-hand);
-    border-radius: 10px;
-    
-} */
 
 /* %#%#%#%#%#%#%#%#%#%#%#%#%#%#%# */
 /* %# MOBILE MENU */
@@ -109,8 +113,26 @@ body::-webkit-scrollbar {
     height: 100px;
 }
 
+.landing .header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .landing .header .logo img {
     width: 80px;
+}
+
+.landing .header .logo p.path {
+    padding-left: 30px;
+    font-family: var(--font-main);
+    font-weight: 600;
+    transform: translateY(-8px);
+    color: #424242;
+}
+
+.landing .header .logo p.path span.back-path {
+    color: #cbcbcb;
 }
 
 .landing .header .links ion-icon {
@@ -194,7 +216,7 @@ body::-webkit-scrollbar {
 
 .article {
     background: var(--color-main);
-    margin-top: 100px;
+    margin-bottom: 15px;
     padding: 60px;
     transition: all 0.5s ease;
     position: relative;
@@ -289,6 +311,10 @@ body::-webkit-scrollbar {
     }
     
     .landing .header .links a {
+        display: none;
+    }
+    
+    .landing .header .logo p.path {
         display: none;
     }
     
