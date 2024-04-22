@@ -5,11 +5,11 @@
 
 <p align='center'>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg" height="40" alt="bash logo"/>
-    <img width='12px'\>
+    <img width='24px'\>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" height="40" alt="python logo"/>
-    <img width='12px'\>
+    <img width='24px'\>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" height="40" alt="arduino logo"/>
-    <img width='12px'\>
+    <img width='24px'\>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="40" alt="arduino logo"/>
 </p>
 
