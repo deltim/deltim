@@ -18,5 +18,5 @@
 <img width='12px'\>
 <a href='https://github.com/lazzytim/thunder-rpc'><strong>[ ThunderRPC ]<strong></a>
 <img width='12px'\>
-<a href='https://github.com/lazzytim/thunder-rpc'><strong>[ Send an email ]<strong></a>
+<a href='mailto:timothy.deletrez@proton.me'><strong>[ Send an email ]<strong></a>
 </p>
