@@ -13,6 +13,8 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="40" alt="arduino logo"/>
 </p>
 
+<br>
+
 <p align='center'>
 <a href='https://lazzytim.github.io/lazzytim/README'><strong>[ Online readme.md ]<strong></a>
 <img width='12px'\>
@@ -21,7 +23,6 @@
 <a href='mailto:timothy.deletrez@proton.me'><strong>[ Send an email ]<strong></a>
 </p>
 
-<br>
 <br>
 
 <h6 align='center'>Last updated: 4/22/24 at 11:14 PM</h6>
