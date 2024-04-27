@@ -139,6 +139,7 @@ header.header div.burger {
 
 header.header div.burger.open {
     left: 0;
+    display: block;
 }
 
 header.header div.burger div.blinks {
@@ -393,10 +394,6 @@ section.creations div.pre div.pre-item div.lang p.text {
 @media screen and (max-width: 768px) {
     header.header div.links {
         display: none;
-    }
-    
-    header.header div.burger {
-        display: block;
     }
     
     header.header div.burger-btn {
