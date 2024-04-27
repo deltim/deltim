@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+body {
+    background: var(--color-bg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: var(--color-bg);
+
+}
+  
+::-webkit-scrollbar-track {
+    background: #262b32;
+    border-radius: 6px;
+    margin: 5px 0;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #c9d1ce;
+    border-radius: 6px;
+    border: 3px solid #232E33;
+}
+
+:root {
+    --color-bg: #0D1117;
+    --color-bg-hover: #181F2B;
+    --color-borders: #262B32;
+    --color-text: #C9D1CE;
+    --color-text-alt: #808784;
+    --font-family: 'JetBrains Mono', Arial;
+    --font-family-alt: 'Lexend Deca', Arial;
+    --font-weight: 600;
+}
+
+/* ############################ */
+/* # > HEADER */
+/* ############################ */
+
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 30px 30px;
+    top: 30px;
+    left: 0;
+    height: 100px;
+    border-radius: 20px;
+}
+
+header.header div.logo img {
+    height: 70px;
+    transform: translateX(-10px);
+}
+
+header.header div.links a {
+    font-family: var(--font-family-alt);
+    font-weight: var(--font-weight);
+    font-size: 1.2em;
+    color: var(--color-text);
+    padding: 2px 10px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+header.header div.links a.purple::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: #a855f7;
+    transition: all 0.2s ease-in-out;
+}
+
+header.header div.links a.yellow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: #eab308;
+    transition: all 0.2s ease-in-out;
+}
+
+header.header div.links a.green::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: #22c55e;
+    transition: all 0.2s ease-in-out;
+}
+
+header.header div.links a:hover {
+    color: var(--color-bg);
+}
+
+header.header div.links a:hover::before {
+    width: 100%;
+}
+
+header.header div.burger {
+    position: absolute;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background: #080b0f;
+    transition: all 0.2s ease-in-out;
+    display: none;
+}
+
+header.header div.burger.open {
+    left: 0;
+}
+
+header.header div.burger div.blinks {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header.header div.burger div.blinks a {
+    font-family: var(--font-family-alt);
+    font-weight: var(--font-weight);
+    font-size: 3em;
+    color: var(--color-text);
+    padding: 10px 50px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+header.header div.burger div.blinks a.purple {
+    background: #a855f7;
+    color: var(--color-bg);
+}
+
+header.header div.burger div.blinks a.yellow {
+    background: #eab308;
+    color: var(--color-bg);
+}
+
+header.header div.burger div.blinks a.green {
+    background: #22c55e;
+    color: var(--color-bg);
+}
+
+header.header div.burger div.blinks a.gray {
+    background: var(--color-bg);
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+header.header div.burger-btn {
+    display: none;
+    transform: translateY(6px);
+    font-size: 3em;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+/* ############################ */
+/* # > LANDING */
+/* ############################ */
+
+section.landing { 
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.landing div.pre { 
+    margin: 0 auto;
+}
+
+section.landing div.pre h1 { 
+    color: var(--color-text);
+    font-family: var(--font-family-alt);
+    font-size: 8vh;
+    text-align: center;
+}
+
+section.landing div.pre p { 
+    color: var(--color-text);
+    margin-top: 10 px;
+    font-family: var(--font-family-alt);
+    font-size: 3vh;
+    text-align: center;
+}
+
+/* ############################ */
+/* # > WHOAMI */
+/* ############################ */
+
+section.whoami {
+    height: 100vh;
+    margin: 180px 0;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+section.whoami div.command {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.whoami div.command h1 {
+    color: #eab308;
+    font-family: var(--font-family);
+    font-size: 1.4em;
+}
+
+section.whoami div.command h1::before {
+    content: '~$';
+    margin-right: 10px;
+}
+
+section.whoami div.command h1::after {
+    content: '|';
+    font-weight: 100;
+    animation-name: command;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+section.whoami div.pre {
+    margin-top: 40px;
+}
+
+section.whoami div.pre h1 {
+    font-family: var(--font-family-alt);
+    color: var(--color-text);
+    font-size: 3em;
+}
+
+section.whoami div.pre p {
+    font-family: var(--font-family-alt);
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: var(--color-text);
+    max-width: 850px;
+}
+
+/* ############################ */
+/* # > CREATIONS */
+/* ############################ */
+
+
+section.creations {
+    height: 100vh;
+    margin: 180px 0;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+section.creations div.command {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.creations div.command h1 {
+    color: #a855f7;
+    font-family: var(--font-family);
+    font-size: 1.4em;
+}
+
+section.creations div.command h1::before {
+    content: '~$';
+    margin-right: 10px;
+}
+
+section.creations div.command h1::after {
+    content: '|';
+    font-weight: 100;
+    animation-name: command;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+section.creations div.pre {
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+section.creations div.pre div.pre-item {
+    padding: 20px 30px;
+    border: solid 1px var(--color-borders);
+    border-radius: 8px;
+    max-width: 600px;
+    margin-bottom: 32px;
+    transition: all 0.2s ease-in-out;
+}
+
+section.creations div.pre div.pre-item:hover {
+    background-color: var(--color-bg-hover);
+}
+
+section.creations div.pre div.pre-item h1.title {
+    font-family: var(--font-family-alt);
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+section.creations div.pre div.pre-item p.desc {
+    font-family: var(--font-family);
+    font-size: 0.8em;
+    font-weight: 200;
+    margin-top: 10px;
+    max-width: 550px;
+    color: var(--color-text);
+}
+
+section.creations div.pre div.pre-item div.lang {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+section.creations div.pre div.pre-item div.lang div.color {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #fff;
+    transform: translateY(4px);
+}
+
+section.creations div.pre div.pre-item div.lang p.text {
+    font-family: var(--font-family);
+    font-size: 0.8em;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 8px;
+    max-width: 345px;
+    color: var(--color-text);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    header.header div.links {
+        display: none;
+    }
+    
+    header.header div.burger {
+        display: block;
+    }
+    
+    header.header div.burger-btn {
+        display: block;
+    }
+}
+
+@keyframes command {
+    0% {
+        opacity: 100%;
+    }
+    
+    50% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}

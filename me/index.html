@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C:/Lazzytim/home.md</title>
+        <link rel="icon shortcut" href="assets/images/logo.png">
+        <link rel="apple-touch-icon" href="assets/images/logo.png">
+        <link rel="stylesheet" href="style/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="timothydeletrez timothy deletrez lazzytim">
+        <meta name="description" content="Hi! This is my personal website, you can find links to my socials medias and projects here!">
+        <meta name="robots" content="index"/>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:description" content="Hi! This is my personal website, you can find links to my socials medias and projects here!">
+        <meta property="og:image" content="LIENS A REMPLACER">
+        <meta property="og:type" content="profile">
+        <meta property="og:url" content="LIENS A REMPLACER">
+        <meta charset="utf-8">
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="assets/images/icon.png" alt="LazzyTim's icon">
+            </div>
+            <div class="links">
+                <a class="purple" href="#creations" class="links-item">repositories</a>
+                <a class="yellow" href="#whoami" class="links-item">whoami</a>
+                <a class="green" href="https://github.com/lazzytim" class="links-item">github</a>
+            </div>
+            <div class="burger-btn"><ion-icon name="menu-outline"></ion-icon></div>
+            <div class="burger">
+                <div class="blinks">
+                    <a class="purple links-item" href="#creations">repositories</a>
+                    <a class="yellow links-item" href="#whoami">whoami</a>
+                    <a class="green links-item" href="https://github.com/lazzytim">curl github.com</a>
+                    <a class="gray links-item close">exit()</a>
+                </div>
+            </div>
+        </header>
+        <section class="landing">
+            <div class="pre">
+                <h1>Hi! How are u doing?</h1>
+                <p>It's a pleasure to meet you!</p>
+            </div>
+        </section>
+        <section class="whoami" id="whoami">
+            <div class="command">
+                <h1>whoami</h1>
+            </div>
+            <div class="pre">
+                <h1>I'm Timothy Deletrez,</h1>
+                <p>A student based in Belgium who is learning electronics and computer science. I learned Python, a popular programming language on my own and currently learning C.</p>
+            </div>
+        </section>
+        <section class="creations" id="creations">
+            <div class="command">
+                <h1>repositories</h1>
+            </div>
+            <div class="pre">
+                <a href="https://github.com/lazzytim/hestorya.be">
+                    <div class="pre-item">
+                        <h1 class="title">Hestorya.be</h1>
+                        <p class="desc"> Hestorya's official website for his portfolio, and chess game</p>
+                        <div class="lang">
+                            <div class="color" style="background: #f7e445;"></div>
+                            <p class="text">JavaScript</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/lazzytim/thunder-rpc">
+                    <div class="pre-item">
+                        <h1 class="title">ThunderRPC</h1>
+                        <p class="desc">ThunderRPC is a software that allow you to send a custom rich presence to a distant client using PyPresence.</p>
+                        <div class="lang">
+                            <div class="color" style="background: #376c99;"></div>
+                            <p class="text">Python</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/lazzytim/ssm">
+                    <div class="pre-item">
+                        <h1 class="title">Satisfactory Save Manager</h1>
+                        <p class="desc">Satisfactory Save Manager or SSM is an external portable software that allow you to import and export saves from the game Satisfactory</p>
+                        <div class="lang">
+                            <div class="color" style="background: #376c99;"></div>
+                            <p class="text">Python</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <script>
+            const obtn = document.querySelector('.burger-btn')
+            const cbtn = document.querySelector('.close')
+            const lbtn = document.querySelector('.links-item')
+            const menu = document.querySelector('.burger')
+            
+            obtn.addEventListener('click',()=>{
+                menu.classList.add('open')
+            })
+            
+            lbtn.addEventListener('click',()=>{
+                menu.classList.remove('open')
+            })
+            
+            cbtn.addEventListener('click',()=>{
+                menu.classList.remove('open')
+            })
+        </script>
+    </body>
+</html>
