@@ -44,6 +44,10 @@ body .gist .gist-meta .gist-meta {
     color: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url("../imgs/bg.png");
     background-size: cover;
@@ -358,6 +362,26 @@ body {
 
 .projects .projects-content .projects-item a:hover ion-icon {
     transform: translateY(3px) rotate(315deg);
+}
+
+/* ############################ */
+/*  Footer                     
+*/
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #0000001a;
+    backdrop-filter: blur(10px);
+}
+
+.footer p {
+    color: var(--color-text-black);
+    font-family: var(--font-main);
+    font-weight: 300;
+    font-size: 0.8em;
 }
 
 /* ############################ */
