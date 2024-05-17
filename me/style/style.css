@@ -72,7 +72,8 @@ body {
 */
 
 .menu {
-    position: absolute;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     background: #3c3d46;
@@ -206,16 +207,28 @@ body {
 .landing {
     height: 91vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
-.landing h1 {
+.landing .text h1 {
     text-align: center;
-    vertical-align: middle;
     font-family: var(--font-sec);
     font-weight: 500;
     font-size: 4em;
+    padding: 0 20px;
+}
+
+.landing .text p {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    font-family: var(--font-sec);
+    font-weight: 500;
+    font-size: 1.4em;
+    max-width: 600px;
+    padding: 0 20px;
 }
 
 /* ############################ */
@@ -270,10 +283,81 @@ body {
     padding-bottom: 20px;
 }
 
-.gists .gists-content .gists-item a {
+/* ############################ */
+/*  Projects Section                    
+*/
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #0000001a;
+    backdrop-filter: blur(10px);
+}
+
+.projects h1.title {
+    margin: 100px 0;
     color: var(--color-text-black);
     font-family: var(--font-main);
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 2.5em;
+    transform: translateY(20px);
+}
+
+.projects .projects-content {
+    display: grid;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 48px;
+    grid-row-gap: 32px;
+}
+
+.projects .projects-content .projects-item {
+    padding: 20px 30px;
+    background: #0000001a;
+    border: solid 1px #3c3d46;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.projects .projects-content .projects-item h1 {
+    color: var(--color-text-black);
+    font-family: var(--font-main);
+}
+
+.projects .projects-content .projects-item h2 {
+    color: var(--color-subtext-black);
+    font-family: var(--font-main);
+    font-size: 0.8em;
+    padding-bottom: 20px;
+}
+
+.projects .projects-content .projects-item p {
+    color: var(--color-text-black);
+    font-family: var(--font-main);
+    font-weight: 300;
+    font-size: 0.8em;
+    max-width: 375px;
+    padding-bottom: 20px;
+}
+
+.projects .projects-content .projects-item a {
+    color: var(--color-text-black);
+    font-family: var(--font-main);
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.projects .projects-content .projects-item a ion-icon {
+    transition: all 0.2s ease-in-out;
+    transform: translateY(3px);
+}
+
+.projects .projects-content .projects-item a:hover ion-icon {
+    transform: translateY(3px) rotate(315deg);
 }
 
 /* ############################ */
@@ -289,6 +373,11 @@ body {
         display: flex;
         flex-direction: column;
     }
+    
+    .projects .projects-content {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -298,5 +387,13 @@ body {
     
     .header .links .open-btn {
         display: inline-block;
+    }
+    
+    .gists .gists-content {
+        width: 300px;
+    }
+    
+    .projects .projects-content {
+        width: 300px;
     }
 }
