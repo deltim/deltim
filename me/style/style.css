@@ -244,7 +244,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: #0000001a;
+    background: #09121f;
     backdrop-filter: blur(10px);
 }
 
@@ -296,7 +296,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: #0000001a;
+    background: #060c14;
     backdrop-filter: blur(10px);
 }
 
@@ -373,7 +373,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #0000001a;
+    background: #03070c;
     backdrop-filter: blur(10px);
 }
 
