@@ -1,126 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>get.lazzytim('home.md')</title>
-        <link rel="icon shortcut" href="imgs/icon.png">
-        <link rel="apple-touch-icon" href="imgs/icon.png">
-        <link rel="stylesheet" href="style/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="timothydeletrez timothy deletrez lazzytim">
-        <meta name="description" content="Hi! This is my personal website, you can find links to my socials medias and projects here!">
-        <meta name="robots" content="index"/>
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="og:description" content="Hi! This is my personal website, you can find links to my socials medias and projects here!">
-        <meta property="og:image" content="LIENS A REMPLACER">
-        <meta property="og:type" content="profile">
-        <meta property="og:url" content="LIENS A REMPLACER">
-        <meta charset="utf-8">
-        
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>⚡ guest@lazzytim</title>
     </head>
     <body>
-        <header class="header">
-            <div class="logo">
-                <img src="imgs/icon.png" alt="Lazzytim's icon">
-            </div>
-            <div class="links">
-                <a href="#about" class="links-item">
-                    About
-                </a>
-                <a href="#projects" class="links-item">
-                    Projects
-                </a>
-                <a href="#gists" class="links-item">
-                    Snippets
-                </a>
-                <a class="open-btn">
-                    <ion-icon name="reorder-three-outline"></ion-icon>
-                </a>
-            </div>
-        </header>
-        
-        
-        <div class="menu">
-            <div class="menu-content">
-                <a class="close-btn">
-                    <ion-icon name="close-outline"></ion-icon>
-                </a> 
-                <div class="menu-links">
-                    
-                    <a href="#about" class="links-item">
-                        About
-                    </a>
-                    <a href="#projects" class="links-item">
-                        Projects
-                    </a>
-                    <a href="#gists" class="links-item">
-                        Snippets
-                    </a>
-                </div>
-            </div> 
+        <img class="logo" src="assets/logo.png" alt="Lazzytim">
+        <p class="presentation">Welcome here,<br><br>I’m Timothy, a belgian student who love to code and play video games with his friends!<br><br>My website work like a terminal. To change page, you’ll need to execute commands.<br><br>I recommend you to execute the “help” command!</p>
+        <div class="input">
+            <p class="path">~$_</p>
+            <input class="entry" type="text" maxlength="12">  
         </div>
-        
-        
-        <section class="landing" id="about">
-            <div class="text">
-                <h1>Hi! Nice to meet you</h1>
-                <p>I'm Timothy, a student based in Belgium who is studying electronics and computer science. I'm passionate by graphism and music</p>
-            </div>
-        </section>
-        
-        
-        <section class="gists" id="gists">
-            <h1 class="title">Snippets</h1>
-            <div class="gists-content">
-                <div class="gists-item">
-                    <h1>Relative Path</h1>
-                    <h2>for Python</h2>
-                    <script src="https://gist.github.com/lazzytim/253e0dda81800ebdae3105f07ab0f6e7.js"></script>
-                    
-                </div>
-                <div class="gists-item">
-                    <h1>Color codes</h1>
-                    <h2>for Python</h2>
-                    <script src="https://gist.github.com/lazzytim/f7795bcdcf93ff442c8519ea90710abf.js"></script>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="projects" id="projects">
-            <h1 class="title">Projects</h1>
-            <div class="projects-content">
-                <div class="projects-item">
-                    <h1>ThunderRPC</h1>
-                    <h2>PYTHON</h2>
-                    <p>ThunderRPC is a software that allow you to send a wonderful and ultra customizable rich presence to a distant application like Discord apps using PyPresence.</p>
-                    <a href="https://github.com/lazzytim/thunder-rpc">See more <ion-icon name="arrow-forward"></ion-icon></a>
-                </div>
-                <div class="projects-item">
-                    <h1>LazzyTim</h1>
-                    <h2>CSS</h2>
-                    <p>My website and my Github profile README. You are actually on this repository online with the Github Pages feature. Hope you like this website by the way.</p>
-                    <a href="https://github.com/lazzytim/lazzytim">See more <ion-icon name="arrow-forward"></ion-icon></a>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <p>Timothy Deletrez &copy; 2024</p>
-        </footer>
     </body>
 </html>
-
-<script>
-    const obtn = document.querySelector('.open-btn')
-    const cbtn = document.querySelector('.close-btn')
-    const menu = document.querySelector('.menu')
-
-    obtn.addEventListener('click',()=>{
-        menu.classList.toggle('open')
-    })
-
-    cbtn.addEventListener('click',()=>{
-        menu.classList.toggle('open')
-    })
-</script>
